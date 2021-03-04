@@ -1,0 +1,79 @@
+@import url('../fonts/font-awesome/webfonts/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: 'Storytella';
+    src: url('../fonts/Storytella.woff') format('woff'),
+         url('../fonts/Storytella.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AlohaParadise';
+    src: url('../fonts/AlohaParadise-Regular.woff') format('woff'),
+         url('../fonts/AlohaParadise-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AlohaParadise';
+    src: url('../fonts/AlohaParadise-Bold.woff') format('woff'),
+         url('../fonts/AlohaParadise-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'),
+         url('../fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Bold.woff') format('woff'),
+         url('Raleway-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BoldItalic.woff') format('woff'),
+         url('../fonts/Raleway-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../Raleway-Italic.woff') format('woff'),
+         url('../Raleway-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @layer components {
+    h1,
+    h2,
+    h3 {
+      @apply font-display;
+    }
+    h1 {
+      @apply text-4xl;
+    }
+    h2 {
+      @apply text-3xl;
+    }
+    h3 {
+      @apply text-2xl;
+    }
+    p {
+      @apply text-xl;
+    }
+  }
+  
+}

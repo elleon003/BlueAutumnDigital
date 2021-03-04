@@ -1,0 +1,17 @@
+{
+  "name": "blueautumndigital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build css/main.css -o css/output.css",
+    "watch": "watch 'npm run build:css' ./css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "tailwindcss": "^2.0.3",
+    "watch": "^1.0.2"
+  }
+}
