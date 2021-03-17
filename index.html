@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='h-full'>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,90 @@
   <title>Blue Autumn Digital</title>
   <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
-  <h1><span class='font-logo text-5xl'>Blue Autumn</span> Digital</h1>
-  <p>Checking out the Raleway font in body</p>
+<body class='h-full flex flex-col flex-shrink-0'>
+  <header class='container flex flex-col'>
+    <nav class='flex justify-between mx-4 mt-4 align-baseline'>
+      <a href='index.html' class='hover:underline'><h1><span class='font-logo text-5xl'>Blue Autumn</span> Digital</h1></a>
+      <ul class='flex mt-3'>
+        <li class='pr-2 pt-2 text-xl hover:underline hover:font-bold'><a href='#about'>About</a></li>
+        <li class='pr-2 pt-2 text-xl hover:underline hover:font-bold'><a href='#solutions'>Solutions</a></li>
+        <li class='pr-2 pt-2 text-xl hover:underline hover:font-bold'><a href='/blog'>Blog</a></li>
+        <li class='btn text-xl hover:underline hover:font-bold'><a href='/contact'>Contact</a></li>
+      </ul>
+    </nav>
+    <div class='flex flex-col justify-center h-3/5 w-2/4 mx-auto py-52'>
+      <p class='text-5xl font-bold mb-8'>You don’t need to be the loudest on the Internet.
+      </p>
+      <p class='text-5xl font-bold mb-8'>You just need to be heard.</p>
+      <a href='contact.html' class='btn mx-auto mt-8'>Let's Talk</a>
+    </div>
+  </header>
+  <main>
+    <section class='py-52'>
+      <div class='container w-3/4 mb-8'>
+        <p class='font-bold text-4xl'><span class='font-logo text-5xl'>Blue Autumn</span> <span class='font-display text-4xl font-normal'>Digital </span>is a web development and SEO content creation firm for small businesses.</p>
+      </div>
+      <div class='w-3/5 mx-auto mb-8 flex flex-col'>
+        <p class='mb-8'>Blue Autumn was founded by theatre professionals - content producers and creatives who have spent over two decades mastering the alchemy of meaningful audience engagement. 
+
+          With a suite of services elegant design, clear messaging, and technical support, Blue Autumn sets the stage for your online presence.
+          </p>
+        <a href='contact.html' class='btn mt-8 mx-auto'>Let's Talk</a>
+      </div>
+    </section>
+    <section id='services' class='py-52'>
+      <div class='container w-3/4 mb-8 flex flex-col'>
+        <h2 class='text-center mb-10'>What We Do</h2>
+        <div class='grid grid-cols-3 gap-6'>
+          <div class='flex flex-col text-center'>
+            <i class="far fa-file-code fa-3x pb-4"></i>
+            <h3>Development</h3>
+            <p class='text-left my-4'>We build sites that blend accessibility with aesthetics, and give our clients the reliable, online presence they need to connect with their audiences. </p>
+          </div>
+          <div class='flex flex-col text-center'>
+            <i class="far fa-file-alt fa-3x pb-4"></i>
+            <h3>Content</h3>
+            <p class='text-left my-4'>Do you know what SEO writing is? Don’t worry, we do. Blue Autumn creates content that improves keyword density and elevates search rankings with clear, concise, targeted messaging.</p>
+          </div>
+          <div class='flex flex-col text-center'>
+            <i class="fas fa-tasks fa-3x pb-4"></i>
+            <h3>Management</h3>
+            <p class='text-left my-4'>Small business owners need to run their businesses - not their websites. We provide maintenance packages that will keep your site ready to serve customers.</p>
+          </div>
+        </div>
+        <a href='contact.html' class='btn mt-8 mx-auto'>Let's Talk</a>
+      </div>
+    </section>
+    <section id='about' class='pt-52'>
+      <div class='container w-3/4 mb-8 flex flex-col'>
+        <h2 class='text-center mb-10'>Who We Are</h2>
+        <div class='grid grid-cols-2 gap-x-8 gap-y-24 items-center'>
+          <div class='about-content'>
+            <h3>Noelle Anderson, The Developer</h3>
+            <p class='my-4'>Noelle is a systems developer and self-taught coder who specializes in building unique, responsive, and accessible sites. She is a passionate teacher, and loves to break down complex topics to make them accessible to people who aren’t big computer nerds.  Noelle is also the host of the podcast <a href="https://shebuildswithcode.com" target="_blank" class='italic'>She Builds With Code</a>, where she chronicles her journey in the tech industry.  Penguins are her jam. </p>
+          </div>
+          <div class='about-img'>
+            <img src="https://via.placeholder.com/200x100" class='w-full' alt='Picture of Noelle Anderson'>
+          </div>
+          <div class='about-img'>
+            <img src="https://via.placeholder.com/200x100" class='w-full' alt='Picture of Brandon Anderson'>
+          </div>
+          <div class='about-content'>
+            <h3>Brandon Anderson, The Writer</h3>
+            <p class='my-4'>Brandon is a writer, editor, and producer with 20 years of experience in content creation, media relations, and external communications for one of the largest ensemble theatre companies in the United States.  His freelance writing portfolio includes clients in the finance, education, and literary sectors. Brandon is the creator of shutupasecond.com, a weekly blog of personal essays, poems, and other pieces that go great with a cup of coffee.  He knows entirely too much about the 90s teen sitcom, <span class='italic font-bold'>Saved By the Bell</span></p>
+          </div>
+        </div>
+        <a href='contact.html' class='btn mt-8 mx-auto'>Let's Talk</a>
+      </div>
+    </section>
+  </main>
+  <footer class='container w-3/4 py-6 mt-auto flex justify-between items-center'>
+    <p>&copy;2021 <a href="/">Blue Autumn Digital</a></p>
+    <ul class='flex'>
+      <li class="pr-6"><a href="contact.html">Contact Us</a></li>
+      <li class="pr-6"><a href="#">Privacy Policy</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </footer>
 </body>
 </html>

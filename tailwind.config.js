@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    container: {
+      center: true
+    },
     fontFamily: {
       'sans': ['Raleway', 'ui-sans-serif', 'system-ui'],
       'body': ['Raleway', 'ui-sans-serif', 'system-ui'],
@@ -34,7 +37,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover', 'focus']
+    },
   },
   plugins: [
     require('tailwindcss'),

@@ -1,6 +1,17 @@
 @import url('../fonts/font-awesome/webfonts/all.min.css');
 
-/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+html {
+  scroll-behavior: smooth;
+}
+
+/* #solutions {
+  background-image:url('../img/BlackManBlackWomanCalendar.png');
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+} */
+
+/* ! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -829,6 +840,8 @@ select{
 
 .container{
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 640px){
@@ -861,21 +874,22 @@ select{
   }
 }
 
-h1, h2, h3{
+h1, h2{
   font-family: Storytella;
 }
 
 h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 h3 {
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -883,6 +897,41 @@ h3 {
 p {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(3, 25, 38, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(244, 243, 250, var(--tw-text-opacity));
+}
+
+.btn-light {
+  --tw-bg-opacity: 1;
+  background-color: rgba(244, 243, 250, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(3, 25, 38, var(--tw-border-opacity));
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 700;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(3, 25, 38, var(--tw-text-opacity));
+}
+
+.active {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -6418,6 +6467,78 @@ p {
 }
 
 .font-black{
+  font-weight: 900;
+}
+
+.hover\:font-thin:hover{
+  font-weight: 100;
+}
+
+.hover\:font-extralight:hover{
+  font-weight: 200;
+}
+
+.hover\:font-light:hover{
+  font-weight: 300;
+}
+
+.hover\:font-normal:hover{
+  font-weight: 400;
+}
+
+.hover\:font-medium:hover{
+  font-weight: 500;
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600;
+}
+
+.hover\:font-bold:hover{
+  font-weight: 700;
+}
+
+.hover\:font-extrabold:hover{
+  font-weight: 800;
+}
+
+.hover\:font-black:hover{
+  font-weight: 900;
+}
+
+.focus\:font-thin:focus{
+  font-weight: 100;
+}
+
+.focus\:font-extralight:focus{
+  font-weight: 200;
+}
+
+.focus\:font-light:focus{
+  font-weight: 300;
+}
+
+.focus\:font-normal:focus{
+  font-weight: 400;
+}
+
+.focus\:font-medium:focus{
+  font-weight: 500;
+}
+
+.focus\:font-semibold:focus{
+  font-weight: 600;
+}
+
+.focus\:font-bold:focus{
+  font-weight: 700;
+}
+
+.focus\:font-extrabold:focus{
+  font-weight: 800;
+}
+
+.focus\:font-black:focus{
   font-weight: 900;
 }
 
@@ -22121,6 +22242,8 @@ p {
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 640px){
@@ -27686,6 +27809,78 @@ p {
   }
 
   .sm\:font-black{
+    font-weight: 900;
+  }
+
+  .sm\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .sm\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .sm\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .sm\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .sm\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .sm\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .sm\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .sm\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .sm\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
+  .sm\:focus\:font-thin:focus{
+    font-weight: 100;
+  }
+
+  .sm\:focus\:font-extralight:focus{
+    font-weight: 200;
+  }
+
+  .sm\:focus\:font-light:focus{
+    font-weight: 300;
+  }
+
+  .sm\:focus\:font-normal:focus{
+    font-weight: 400;
+  }
+
+  .sm\:focus\:font-medium:focus{
+    font-weight: 500;
+  }
+
+  .sm\:focus\:font-semibold:focus{
+    font-weight: 600;
+  }
+
+  .sm\:focus\:font-bold:focus{
+    font-weight: 700;
+  }
+
+  .sm\:focus\:font-extrabold:focus{
+    font-weight: 800;
+  }
+
+  .sm\:focus\:font-black:focus{
     font-weight: 900;
   }
 
@@ -43311,6 +43506,8 @@ p {
 @media (min-width: 768px){
   .md\:container{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 640px){
@@ -48876,6 +49073,78 @@ p {
   }
 
   .md\:font-black{
+    font-weight: 900;
+  }
+
+  .md\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .md\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .md\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .md\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .md\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .md\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .md\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .md\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .md\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
+  .md\:focus\:font-thin:focus{
+    font-weight: 100;
+  }
+
+  .md\:focus\:font-extralight:focus{
+    font-weight: 200;
+  }
+
+  .md\:focus\:font-light:focus{
+    font-weight: 300;
+  }
+
+  .md\:focus\:font-normal:focus{
+    font-weight: 400;
+  }
+
+  .md\:focus\:font-medium:focus{
+    font-weight: 500;
+  }
+
+  .md\:focus\:font-semibold:focus{
+    font-weight: 600;
+  }
+
+  .md\:focus\:font-bold:focus{
+    font-weight: 700;
+  }
+
+  .md\:focus\:font-extrabold:focus{
+    font-weight: 800;
+  }
+
+  .md\:focus\:font-black:focus{
     font-weight: 900;
   }
 
@@ -64501,6 +64770,8 @@ p {
 @media (min-width: 1024px){
   .lg\:container{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 640px){
@@ -70066,6 +70337,78 @@ p {
   }
 
   .lg\:font-black{
+    font-weight: 900;
+  }
+
+  .lg\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .lg\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .lg\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .lg\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .lg\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .lg\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .lg\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .lg\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .lg\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
+  .lg\:focus\:font-thin:focus{
+    font-weight: 100;
+  }
+
+  .lg\:focus\:font-extralight:focus{
+    font-weight: 200;
+  }
+
+  .lg\:focus\:font-light:focus{
+    font-weight: 300;
+  }
+
+  .lg\:focus\:font-normal:focus{
+    font-weight: 400;
+  }
+
+  .lg\:focus\:font-medium:focus{
+    font-weight: 500;
+  }
+
+  .lg\:focus\:font-semibold:focus{
+    font-weight: 600;
+  }
+
+  .lg\:focus\:font-bold:focus{
+    font-weight: 700;
+  }
+
+  .lg\:focus\:font-extrabold:focus{
+    font-weight: 800;
+  }
+
+  .lg\:focus\:font-black:focus{
     font-weight: 900;
   }
 
@@ -85691,6 +86034,8 @@ p {
 @media (min-width: 1280px){
   .xl\:container{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 640px){
@@ -91256,6 +91601,78 @@ p {
   }
 
   .xl\:font-black{
+    font-weight: 900;
+  }
+
+  .xl\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .xl\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .xl\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .xl\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .xl\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .xl\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .xl\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .xl\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .xl\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
+  .xl\:focus\:font-thin:focus{
+    font-weight: 100;
+  }
+
+  .xl\:focus\:font-extralight:focus{
+    font-weight: 200;
+  }
+
+  .xl\:focus\:font-light:focus{
+    font-weight: 300;
+  }
+
+  .xl\:focus\:font-normal:focus{
+    font-weight: 400;
+  }
+
+  .xl\:focus\:font-medium:focus{
+    font-weight: 500;
+  }
+
+  .xl\:focus\:font-semibold:focus{
+    font-weight: 600;
+  }
+
+  .xl\:focus\:font-bold:focus{
+    font-weight: 700;
+  }
+
+  .xl\:focus\:font-extrabold:focus{
+    font-weight: 800;
+  }
+
+  .xl\:focus\:font-black:focus{
     font-weight: 900;
   }
 
@@ -106881,6 +107298,8 @@ p {
 @media (min-width: 1536px){
   .\32xl\:container{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 640px){
@@ -112446,6 +112865,78 @@ p {
   }
 
   .\32xl\:font-black{
+    font-weight: 900;
+  }
+
+  .\32xl\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .\32xl\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .\32xl\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .\32xl\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .\32xl\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .\32xl\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .\32xl\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .\32xl\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .\32xl\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
+  .\32xl\:focus\:font-thin:focus{
+    font-weight: 100;
+  }
+
+  .\32xl\:focus\:font-extralight:focus{
+    font-weight: 200;
+  }
+
+  .\32xl\:focus\:font-light:focus{
+    font-weight: 300;
+  }
+
+  .\32xl\:focus\:font-normal:focus{
+    font-weight: 400;
+  }
+
+  .\32xl\:focus\:font-medium:focus{
+    font-weight: 500;
+  }
+
+  .\32xl\:focus\:font-semibold:focus{
+    font-weight: 600;
+  }
+
+  .\32xl\:focus\:font-bold:focus{
+    font-weight: 700;
+  }
+
+  .\32xl\:focus\:font-extrabold:focus{
+    font-weight: 800;
+  }
+
+  .\32xl\:focus\:font-black:focus{
     font-weight: 900;
   }
 

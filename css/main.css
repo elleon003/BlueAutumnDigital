@@ -1,5 +1,16 @@
 @import url('../fonts/font-awesome/webfonts/all.min.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* #solutions {
+  background-image:url('../img/BlackManBlackWomanCalendar.png');
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,21 +69,29 @@
   
   @layer components {
     h1,
-    h2,
-    h3 {
+    h2 {
       @apply font-display;
     }
     h1 {
-      @apply text-4xl;
+      @apply text-5xl;
     }
     h2 {
-      @apply text-3xl;
+      @apply text-4xl;
     }
     h3 {
-      @apply text-2xl;
+      @apply text-2xl font-bold;
     }
     p {
       @apply text-xl;
+    }
+    .btn {
+      @apply py-3 px-8 text-white bg-black font-bold rounded;
+    }
+    .btn-light {
+      @apply py-3 px-8 text-black bg-white font-bold rounded border border-solid border-black;
+    }
+    .active {
+      @apply font-bold underline;
     }
   }
   
